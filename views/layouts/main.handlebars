@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RxPress by Brendan Baldocchi</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="/postTemplate.js" charset="utf-8" defer></script>
+    <script src="/index.js" charset="utf-8" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <img src="pill.png" alt="Logo" style="width:54px;height:48px;margin-left:5px;">
+      <h1 class="site-title"><a href="/">RxPress</a></h1>    
+    </header>
+
+    {{{body}}}
+  <div class ="img-wrapper">
+        <img src="pills.jpg"/>
+      </div>
+  </body>
+
+</html>

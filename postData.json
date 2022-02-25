@@ -1,0 +1,26 @@
+[
+  {
+    "title": "James Bond",
+    "body": "Ibuprofen: 2 200mg pills orally twice a day.",
+    "minBody": "Ibuprofen: 2 200mg pills orally twice a day.",
+    "index": 0
+  },
+  {
+    "title": "John Smith",
+    "body": "1000 milligrams (mg) of amoxicillin and 30 mg of lansoprazole, each given three times a day (every 8 hours) for 14 days.",
+    "minBody": "1000 milligrams (mg) of amoxicillin and 30 mg of lansoprazole, each given three times a day (every 8 hours) for 14 days.",
+    "index": 1
+  },
+  {
+    "title": "Kevin Jones",
+    "body": "Amoxicillin: 1 500mg pills orally in the morning with a meal for 10 days.",
+    "minBody": "Amoxicillin: 1 500mg pills orally in the morning with a meal for 10 days.",
+    "index": 2
+  },
+  {
+    "title": "Hello",
+    "body": "TEst",
+    "minBody": "TEst",
+    "index": 3
+  }
+]

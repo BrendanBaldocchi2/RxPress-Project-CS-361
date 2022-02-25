@@ -1,0 +1,56 @@
+<div id="search-modal" class="hidden">
+  <img src="search.png" alt="search" id="search-modal-button" onclick="toggleSearchModal();"><input id="search-bar" type="text" placeholder="Search..">
+</div>
+
+<main class="content">
+
+  <aside class="search-container" id="search-container">
+
+    <img src="search.png" alt="search" onclick="toggleSearchModal();">
+
+  </aside>
+
+  <section id="posts">
+
+    {{#each posts}}
+      {{> post}}
+    {{/each}}
+
+  </section>
+
+</main>
+
+
+<button type="button" id="create-post-button"><i class="fas fa-angle-left"></i></button>
+
+<div id="modal-backdrop" class="hidden"></div>
+<div id="create-modal">
+  <div class="modal-dialog">
+
+    <div class="modal-header">
+      <h3>Create a New Prescription</h3>
+      <button type="button" id="modal-close" class="modal-hide-button">&times;</button>
+    </div>
+
+    <hr>
+
+    <div class="modal-body">
+
+      <div class="post-input-element">
+        <label for="title-input">Patient Name</label>
+        <input type="text" id="title-input">
+      </div>
+
+      <div class="post-input-element">
+        <label id="body-label" for="body-input">Prescription Information</label>
+        <textarea id="body-input" name="body-input" cols="72" rows="18"></textarea>
+      </div>
+
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" id="modal-accept" class="action-button">Submit</button>
+    </div>
+
+  </div>
+</div>
