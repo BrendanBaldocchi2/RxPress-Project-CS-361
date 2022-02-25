@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GreyWolnick/FinalProcjectCS290.git"
+    "url": "git@github.com:BrendanBaldocchi2/RxPress-Project-CS-361.git"
   },
   "author": "",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/GreyWolnick/FinalProcjectCS290/issues"
+    "url": "https://github.com/BrendanBaldocchi2/RxPress-Project-CS-361/issues"
   },
-  "homepage": "https://github.com/GreyWolnick/FinalProcjectCS290#readme",
+  "homepage": "https://github.com/BrendanBaldocchi2/RxPress-Project-CS-361/blob/main/README.md",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
