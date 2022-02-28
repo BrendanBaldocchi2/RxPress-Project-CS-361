@@ -1,26 +1,32 @@
 [
   {
-    "title": "James Bond",
-    "body": "Ibuprofen: 2 200mg pills orally twice a day.",
-    "minBody": "Ibuprofen: 2 200mg pills orally twice a day.",
-    "index": 0
-  },
-  {
     "title": "John Smith",
     "body": "1000 milligrams (mg) of amoxicillin and 30 mg of lansoprazole, each given three times a day (every 8 hours) for 14 days.",
     "minBody": "1000 milligrams (mg) of amoxicillin and 30 mg of lansoprazole, each given three times a day (every 8 hours) for 14 days.",
-    "index": 1
+    "index": 0
   },
   {
     "title": "Kevin Jones",
-    "body": "Amoxicillin: 1 500mg pills orally in the morning with a meal for 10 days.",
-    "minBody": "Amoxicillin: 1 500mg pills orally in the morning with a meal for 10 days.",
+    "body": "Prednisone: 60 mg orally for 7 days.",
+    "minBody": "Prednisone: 60 mg orally for 7 days",
+    "index": 1
+  },
+  {
+    "title": "Alicia Taylor",
+    "body": "Sertraline: 50 milligrams (mg) once a day, taken either in the morning or evening",
+    "minBody": "Setraline: 50 milligrams (mg) once a day, taken either in the morning or evening",
     "index": 2
   },
   {
-    "title": "Hello",
-    "body": "TEst",
-    "minBody": "TEst",
+    "title": "Karen Johnson",
+    "body": "Escitalopram: 10 milligrams (mg) once a day for 12 days.",
+    "minBody": "Escitalopram: 10 milligrams (mg) once a day for 12 days.",
     "index": 3
+  },
+  {
+    "title": "Daniel Frank",
+    "body": "Quetiapine: 200 milligrams (mg) every night with a full glass of water.",
+    "minBody": "Quetiapine: 200 milligrams (mg) every night with a full glass of water.",
+    "index": 4
   }
 ]

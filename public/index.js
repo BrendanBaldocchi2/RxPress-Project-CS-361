@@ -8,8 +8,20 @@ $("#icon").click(function() {
   window.location = "/";
 }) 
 
-$("#contract-accept").click(function() {
+
+$("#back-btn").click(function(){
+
   var request = new XMLHttpRequest();
+
+  alert("Taking you back to the home page");
+
+  history.back()
+})
+
+$("#pres-fill").click(function() {
+  var request = new XMLHttpRequest();
+
+  alert("Prescription has been fulfilled");
 
   var requestURL = '/posts' + '/remove';
   request.open('POST', requestURL);
