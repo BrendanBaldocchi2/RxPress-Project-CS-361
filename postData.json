@@ -6,27 +6,21 @@
     "index": 0
   },
   {
-    "title": "Kevin Jones",
-    "body": "Prednisone: 60 mg orally for 7 days.",
-    "minBody": "Prednisone: 60 mg orally for 7 days",
-    "index": 1
-  },
-  {
     "title": "Alicia Taylor",
     "body": "Sertraline: 50 milligrams (mg) once a day, taken either in the morning or evening",
     "minBody": "Setraline: 50 milligrams (mg) once a day, taken either in the morning or evening",
-    "index": 2
+    "index": 1
   },
   {
     "title": "Karen Johnson",
     "body": "Escitalopram: 10 milligrams (mg) once a day for 12 days.",
     "minBody": "Escitalopram: 10 milligrams (mg) once a day for 12 days.",
-    "index": 3
+    "index": 2
   },
   {
     "title": "Daniel Frank",
     "body": "Quetiapine: 200 milligrams (mg) every night with a full glass of water.",
     "minBody": "Quetiapine: 200 milligrams (mg) every night with a full glass of water.",
-    "index": 4
+    "index": 3
   }
 ]

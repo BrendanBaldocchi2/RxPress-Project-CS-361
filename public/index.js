@@ -1,5 +1,5 @@
 var allPosts = [];
-
+//Function for when a user clicks on a post
 function clickPost () {
   window.location = "/posts/" + $(this).attr('data-index');
 }
@@ -8,7 +8,7 @@ $("#icon").click(function() {
   window.location = "/";
 }) 
 
-
+//Navigates the user back to the home screen
 $("#back-btn").click(function(){
 
   var request = new XMLHttpRequest();
@@ -18,10 +18,23 @@ $("#back-btn").click(function(){
   history.back()
 })
 
+
+//404 home page button that takes the user back to homescreen
+$("#return-button").click(function(){
+
+  var request = new XMLHttpRequest();
+
+  alert("Taking you back to the home page!");
+
+  history.back()
+})
+
+//Teammate's microservice modified to work with my code
+
 $("#pres-fill").click(function() {
   var request = new XMLHttpRequest();
 
-  alert("Prescription has been fulfilled");
+  alert("Prescription has been fulfilled"); //added alert to inform user of action
 
   var requestURL = '/posts' + '/remove';
   request.open('POST', requestURL);
@@ -36,10 +49,10 @@ $("#pres-fill").click(function() {
 
   request.setRequestHeader('Content-Type', 'application/json');
 
-  request.addEventListener('load', function (event) {
+  request.addEventListener('load', function (event) { //event success
     if (event.target.status !== 200) {
       var message = event.target.response;
-      alert("Error submitting agreement: " + message);
+      alert("Error submitting agreement: " + message); //error handling 
     } else {
       window.location = "/";
     }
@@ -48,7 +61,7 @@ $("#pres-fill").click(function() {
   request.send(requestBody);
 }) 
 
-
+//Opens the modal for user to enter in information
 function toggleCreateModal () {
   var createModal = document.getElementById('create-modal');
   var createPostButton = document.getElementById('create-post-button');
@@ -83,21 +96,6 @@ $("#modal-close").on({click: toggleCreateModal});
 
 let directions = ['left', 'right', 'top', 'bottom'];
 
-$(function() {
-  $("#return-button").on({
-    mouseover: function() {
-      $(this).css({position: 'absolute'});
-      var x = Math.floor(Math.random() * (window.innerWidth - 100)) + "px";
-      var y = Math.floor(Math.random() * (window.innerHeight - 100)) + "px";
-      console.log(x,y);
-      $(this).animate({
-          left: x,
-          top: y,
-        });
-    }
-  });
-});
-
 function reInsertPosts(index, title, body) {
 
   var context = {
@@ -112,7 +110,7 @@ function reInsertPosts(index, title, body) {
   postsSection.insertAdjacentHTML('beforeend', postDiv);
 
 }
-
+//Adds users post they created to the webpage and json file
 $(function() {
   $("#modal-accept").on({
     click: function() {
@@ -164,6 +162,7 @@ $(function() {
   });
 });
 
+//Function for when user clicks post
 function addClickEvents () {
   var postElems = document.getElementsByClassName('post');
   for (var i = 0; i < postElems.length; i++) {
@@ -171,6 +170,7 @@ function addClickEvents () {
   }
 }
 
+//Toggles the seach modal animation
 $(function() {
   $("#search-modal-button").on({
     click: function() {
@@ -189,6 +189,7 @@ $(function() {
   });
 });
 
+//Opens the search modal
 function toggleSearchModal() {
 
   var searchModal = document.getElementById('search-modal');
@@ -208,6 +209,7 @@ function toggleSearchModal() {
 
 }
 
+//Filters search based on user input
 $('#search-bar').on('input', function() {
   var query = $('#search-bar').val();
   console.log(query);
